@@ -104,3 +104,38 @@ Jiatao Gu团队通过STARFlow（Scalable Latent Normalizing Flows for High-resol
 
 可以说，“流模型”已经从一个具体的模型类别，演变为一种更普遍的**建模数据动态演变和生成过程的范式**，为下一代生成模型的发展提供了丰富的理论基础和实践方向。
 
+### 研讨中提到的流模型相关论文：
+
+1.  **归一化流 (Normalizing Flows)**：
+    *   **Kobyzev et al., IEEE Transactions on Pattern Analysis and Machine Intelligence, 2019**：Jiatao Gu 提到了这篇综述文章，标题为 "Normalizing Flows: An Introduction and Review of Current Methods"，这表明了归一化流在2019年左右是该领域的重要研究方向。
+    *   **Ho et al., ICML 2019**：Jiatao Gu 提到了 "Flow++: Improving Flow-Based Generative Models with Variational Dequantization and Architecture Design"，这是当时改进NF性能的代表性工作。
+    *   **Zhai et al., ICML 2025 (Oral Top 1%)**：Jiatao Gu 提到了他们自己的工作 "Normalizing flows are capable generative models"，这篇论文旨在证明NF在当前背景下仍然是强大的生成模型。
+    *   **Gu et al., Arxiv 2025**：Jiatao Gu 提到了他们团队的另一篇论文 "STARFlow: Scaling Latent Normalizing Flows for High-resolution Image Synthesis"，这是他们将NF扩展到高分辨率图像合成的关键工作。
+    *   **Zhai et al., ICML 2025**：Jiatao Gu 提到了他们团队的另一篇论文 "Normalizing flows are capable generative models"，这篇论文旨在证明NF在当前背景下仍然是强大的生成模型。
+    *   **Gu et al., Arxiv 2025**：Jiatao Gu 提到了他们团队的另一篇论文 "STARFlow: Scaling Latent Normalizing Flows for High-resolution Image Synthesis"，这是他们将NF扩展到高分辨率图像合成的关键工作。
+
+2.  **流匹配 (Flow Matching)**：
+    *   **Lipman et al., arXiv 2022**：Jiatao Gu 和 Ricky T. Q. Chen 都提到了这篇论文 "Flow Matching for Generative Modeling"，这是流匹配概念的奠基性工作之一。Jiatao Gu 甚至提到，Yaron Lipman 是这篇论文的第一作者，并且他借用了Yaron Lipman的幻灯片来解释流匹配。
+    *   **Shaul et al., 2024**：Ricky T. Q. Chen 提到了 "Flow Matching with General Discrete Paths: A Kinetic-Optimal Perspective"，这篇论文扩展了流匹配在离散路径上的应用。
+    *   **Gat et al., 2024**：Ricky T. Q. Chen 提到了 "Discrete Flow Matching"，这是关于离散流匹配的论文。
+
+3.  **神经ODE (Neural ODE)**：
+    *   **Chen et al., NeurIPS 2018**：Jiatao Gu 提到了这篇论文 "Neural Ordinary Differential Equations"，这是神经ODE的开创性工作，它将深度学习中的层视为连续的动态系统。
+
+4.  **Generator Matching**：
+    *   **Holderrieth et al., 2024**：Ricky T. Q. Chen 提到了他们团队的论文 "Generator Matching: Generative modeling with arbitrary Markov processes"，这篇论文将流匹配的概念推广到更一般的马尔可夫过程，包括跳跃过程。
+
+### 流模型最开始是在哪篇文章中提出的？
+
+研讨中虽然没有明确指出“流模型”这个**广义概念**的首次提出文章，但提到了**归一化流（Normalizing Flows）**这个**狭义概念**的早期工作。
+
+根据学术界普遍的认知，**归一化流（Normalizing Flows）**这个概念的奠基性工作通常被认为是：
+
+*   **Rezende, Danilo Jimenez, and Shakir Mohamed. "Variational inference with normalizing flows." International Conference on Machine Learning. PMLR, 2015.**
+
+这篇论文在2015年的ICML会议上提出，它将可逆变换的思想引入变分推断（Variational Inference）中，使得近似后验分布的表达能力大大增强。虽然这篇论文的重点是变分推断，但它奠定了“归一化流”作为一种通过可逆变换来建模复杂概率分布的方法的基础。
+
+研讨中Jiatao Gu也提到了“VAE和归一化流，它们在2015年或2013年左右就出现了”，这与Rezende和Mohamed在2015年的工作时间线是吻合的。
+
+因此，如果追溯“流模型”这个家族中**归一化流**的起源，**Rezende和Mohamed在2015年的论文**是一个非常重要的里程碑。而研讨中提到的其他流模型，如流匹配、神经ODE等，则是在此基础上，或独立发展，但都共享了“连续变换”或“流”的核心思想。
+
